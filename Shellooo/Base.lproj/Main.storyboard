@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,27 +20,27 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Shellooo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shell-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3cB-AU-c2A">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <gestureRecognizers/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbP-Pg-jys">
-                                <rect key="frame" x="20" y="28" width="335" height="750"/>
+                                <rect key="frame" x="20" y="4" width="374" height="732"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-f9-NA7">
-                                        <rect key="frame" x="90.333333333333314" y="398.66666666666669" width="150" height="21"/>
+                                        <rect key="frame" x="113.66666666666666" y="390.33333333333331" width="141" height="21"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="cNu-GU-AJn"/>
+                                            <constraint firstAttribute="width" constant="141" id="cNu-GU-AJn"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ProximaNovaA-Regular" family="Proxima Nova Alt" pointSize="17"/>
                                         <color key="textColor" red="0.068262331187725067" green="0.14359939098358154" blue="0.29413485527038574" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="KPT-aV-re8">
-                                        <rect key="frame" x="0.0" y="109" width="337" height="120"/>
+                                        <rect key="frame" x="0.0" y="100" width="376" height="120"/>
                                         <attributedString key="attributedText">
                                             <fragment content="ASK SHELLOOO">
                                                 <attributes>
@@ -93,7 +93,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="132.06521739130434"/>
+            <point key="canvasLocation" x="136.80000000000001" y="131.52709359605913"/>
         </scene>
     </scenes>
     <resources>
