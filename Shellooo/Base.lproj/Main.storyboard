@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,35 +9,94 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Proxima Nova Alt Regular.otf">
+            <string>ProximaNovaA-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Shellooo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3cB-AU-c2A">
-                                <rect key="frame" x="68" y="149" width="239" height="368"/>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shell-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3cB-AU-c2A">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <gestureRecognizers/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbP-Pg-jys">
+                                <rect key="frame" x="20" y="28" width="335" height="750"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-f9-NA7">
+                                        <rect key="frame" x="90.333333333333314" y="398.66666666666669" width="150" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="cNu-GU-AJn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ProximaNovaA-Regular" family="Proxima Nova Alt" pointSize="17"/>
+                                        <color key="textColor" red="0.068262331187725067" green="0.14359939098358154" blue="0.29413485527038574" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="KPT-aV-re8">
+                                        <rect key="frame" x="0.0" y="109" width="337" height="120"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="ASK SHELLOOO">
+                                                <attributes>
+                                                    <font key="NSFont" size="100" name="Westfalia-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="KPT-aV-re8" firstAttribute="centerY" secondItem="cbP-Pg-jys" secondAttribute="centerY" constant="-206" id="3DV-rv-RXe"/>
+                                    <constraint firstItem="NfG-f9-NA7" firstAttribute="centerX" secondItem="cbP-Pg-jys" secondAttribute="centerX" constant="-2.5" id="Kgv-Pd-hSf"/>
+                                    <constraint firstItem="KPT-aV-re8" firstAttribute="centerX" secondItem="cbP-Pg-jys" secondAttribute="centerX" constant="1" id="bWz-b8-IHd"/>
+                                    <constraint firstItem="NfG-f9-NA7" firstAttribute="centerY" secondItem="cbP-Pg-jys" secondAttribute="centerY" constant="34.5" id="jl6-9P-P7B"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="WAS-EL-tXo" appends="YES" id="ZKp-rn-sN1"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="3cB-AU-c2A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="129" id="Nug-SZ-Zdy"/>
-                            <constraint firstItem="3cB-AU-c2A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RhZ-0M-NpA"/>
-                            <constraint firstItem="3cB-AU-c2A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="TPO-Gj-71a"/>
-                            <constraint firstItem="3cB-AU-c2A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xJN-mj-htE"/>
+                            <constraint firstItem="3cB-AU-c2A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DbB-H5-GJ8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KPT-aV-re8" secondAttribute="trailing" constant="18" id="IYw-V3-XNW"/>
+                            <constraint firstAttribute="trailing" secondItem="3cB-AU-c2A" secondAttribute="trailing" id="JZL-o4-fqs"/>
+                            <constraint firstItem="KPT-aV-re8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Pwr-js-Ld6"/>
+                            <constraint firstItem="3cB-AU-c2A" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="UMq-9g-O6V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cbP-Pg-jys" secondAttribute="trailing" constant="20" id="b1e-JY-XZ5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cbP-Pg-jys" secondAttribute="bottom" id="hsz-9w-L2I"/>
+                            <constraint firstItem="3cB-AU-c2A" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="i6l-Q3-gQg"/>
+                            <constraint firstItem="cbP-Pg-jys" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-16" id="jhj-H6-KVq"/>
+                            <constraint firstItem="cbP-Pg-jys" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pC5-jT-RVd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="magicSayingLabel" destination="NfG-f9-NA7" id="iSJ-xq-d1w"/>
                         <outlet property="shellooBackground" destination="3cB-AU-c2A" id="TiA-ji-qYb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="WAS-EL-tXo">
+                    <connections>
+                        <action selector="tapTapTap:" destination="BYZ-38-t0r" id="Xkq-C3-Ope"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+            <point key="canvasLocation" x="137.68115942028987" y="132.06521739130434"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="shell-1.jpg" width="720" height="1200"/>
+    </resources>
 </document>

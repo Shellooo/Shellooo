@@ -43,5 +43,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Proxima Nova Alt Regular.otf</string>
+		<string>Westfalia-Regular.otf</string>
+	</array>
 </dict>
 </plist>
