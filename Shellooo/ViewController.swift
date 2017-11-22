@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Canvas
 
 
 class ViewController: UIViewController {
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
     var shakeCount = 0
     var shellImages: [UIImage] = []
     
+    @IBOutlet weak var labelAnimation: CSAnimationView!
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?)
     {
         if event?.subtype == UIEventSubtype.motionShake
@@ -32,7 +34,7 @@ class ViewController: UIViewController {
             // Get a random Saying
             
             let randomShakeSaying = shellShakeQuotes[randomShakeIndex]
-            magicSayingLabel.text = randomShakeSaying
+            magicSayingLabel.text = randomShakeSaying; labelAnimation.startCanvasAnimation()
         }
     }
     
@@ -49,7 +51,7 @@ class ViewController: UIViewController {
         // Get a random Saying
         
         let randomSaying = shellQuotes[randomIndex]
-        magicSayingLabel.text = randomSaying
+        magicSayingLabel.text = randomSaying; labelAnimation.startCanvasAnimation()
   
     }
     
@@ -80,7 +82,7 @@ class ViewController: UIViewController {
     }
     func animate(imageView: UIImageView, images: [UIImage]) {
         imageView.animationImages = images
-        imageView.animationDuration = 15
+        imageView.animationDuration = 18
         imageView.startAnimating()
     }
     

@@ -313,6 +313,7 @@
 		4D80763A1FC4C8A9004729EB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4D8076391FC4C8A9004729EB /* Podfile */; };
 		4D80764E1FC4E7D8004729EB /* Proxima Nova Alt Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D80764B1FC4D477004729EB /* Proxima Nova Alt Regular.otf */; };
 		4D80764F1FC4E7DB004729EB /* Westfalia-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D80764C1FC4E2E5004729EB /* Westfalia-Regular.otf */; };
+		4D8076511FC4F904004729EB /* Proxima Nova Alt Condensed Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D8076501FC4F904004729EB /* Proxima Nova Alt Condensed Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -642,9 +643,10 @@
 		4D36CFC81FC4B10B001F5F88 /* shell-141.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "shell-141.jpg"; sourceTree = "<group>"; };
 		4D36CFC91FC4B10B001F5F88 /* shell-196.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "shell-196.jpg"; sourceTree = "<group>"; };
 		4D36CFCA1FC4B10B001F5F88 /* shell-182.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "shell-182.jpg"; sourceTree = "<group>"; };
-		4D8076391FC4C8A9004729EB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		4D8076391FC4C8A9004729EB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4D80764B1FC4D477004729EB /* Proxima Nova Alt Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Regular.otf"; sourceTree = "<group>"; };
 		4D80764C1FC4E2E5004729EB /* Westfalia-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Westfalia-Regular.otf"; sourceTree = "<group>"; };
+		4D8076501FC4F904004729EB /* Proxima Nova Alt Condensed Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Condensed Bold.otf"; sourceTree = "<group>"; };
 		8503C5AD1461CC0C6347770C /* Pods-Shellooo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shellooo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shellooo/Pods-Shellooo.debug.xcconfig"; sourceTree = "<group>"; };
 		F797696F9A90BA17B0B72D3D /* Pods_Shellooo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shellooo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -1046,6 +1048,7 @@
 			isa = PBXGroup;
 			children = (
 				4D80764B1FC4D477004729EB /* Proxima Nova Alt Regular.otf */,
+				4D8076501FC4F904004729EB /* Proxima Nova Alt Condensed Bold.otf */,
 				4D80764C1FC4E2E5004729EB /* Westfalia-Regular.otf */,
 			);
 			path = Resources;
@@ -1393,6 +1396,7 @@
 				4D36CFD31FC4B10B001F5F88 /* shell-207.jpg in Resources */,
 				4D36D0BF1FC4B10C001F5F88 /* shell-32.jpg in Resources */,
 				4D36D0E51FC4B10C001F5F88 /* shell-8.jpg in Resources */,
+				4D8076511FC4F904004729EB /* Proxima Nova Alt Condensed Bold.otf in Resources */,
 				4D36D0CA1FC4B10C001F5F88 /* shell-184.jpg in Resources */,
 				4D36D05E1FC4B10B001F5F88 /* shell-84.jpg in Resources */,
 				4D36D09B1FC4B10C001F5F88 /* shell-269.jpg in Resources */,
@@ -1728,6 +1732,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X3QPJJXVSQ;
 				INFOPLIST_FILE = Shellooo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shellooo.Shellooo.Shellooo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1744,6 +1749,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X3QPJJXVSQ;
 				INFOPLIST_FILE = Shellooo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shellooo.Shellooo.Shellooo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
