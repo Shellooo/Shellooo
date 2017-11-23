@@ -318,6 +318,12 @@
 		4D8076581FC6A1AE004729EB /* mermaid-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8076541FC6A1AD004729EB /* mermaid-1.png */; };
 		4D8076591FC6A1AE004729EB /* mermaid-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8076551FC6A1AD004729EB /* mermaid-2.png */; };
 		4D80765A1FC6A1AE004729EB /* mermaid-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8076561FC6A1AD004729EB /* mermaid-3.png */; };
+		4D80765C1FC74BC1004729EB /* Shell2FullFAST.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4D80765B1FC74BC1004729EB /* Shell2FullFAST.gif */; };
+		4D80765E1FC74DD8004729EB /* Swift + GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D80765D1FC74DD8004729EB /* Swift + GIF.swift */; };
+		4D8076601FC74F06004729EB /* shell2-295.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D80765F1FC74F06004729EB /* shell2-295.png */; };
+		4D8076621FC7520D004729EB /* ShellooLoadScreenFont.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8076611FC7520D004729EB /* ShellooLoadScreenFont.png */; };
+		4D8076681FC752E1004729EB /* shell2-024.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8076671FC752E1004729EB /* shell2-024.png */; };
+		4D8076731FC75901004729EB /* ShelloooHellooo7.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8076711FC75900004729EB /* ShelloooHellooo7.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -655,6 +661,12 @@
 		4D8076541FC6A1AD004729EB /* mermaid-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mermaid-1.png"; sourceTree = "<group>"; };
 		4D8076551FC6A1AD004729EB /* mermaid-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mermaid-2.png"; sourceTree = "<group>"; };
 		4D8076561FC6A1AD004729EB /* mermaid-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mermaid-3.png"; sourceTree = "<group>"; };
+		4D80765B1FC74BC1004729EB /* Shell2FullFAST.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Shell2FullFAST.gif; sourceTree = "<group>"; };
+		4D80765D1FC74DD8004729EB /* Swift + GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift + GIF.swift"; sourceTree = "<group>"; };
+		4D80765F1FC74F06004729EB /* shell2-295.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shell2-295.png"; sourceTree = "<group>"; };
+		4D8076611FC7520D004729EB /* ShellooLoadScreenFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShellooLoadScreenFont.png; sourceTree = "<group>"; };
+		4D8076671FC752E1004729EB /* shell2-024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shell2-024.png"; sourceTree = "<group>"; };
+		4D8076711FC75900004729EB /* ShelloooHellooo7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShelloooHellooo7.png; sourceTree = "<group>"; };
 		8503C5AD1461CC0C6347770C /* Pods-Shellooo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shellooo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shellooo/Pods-Shellooo.debug.xcconfig"; sourceTree = "<group>"; };
 		F797696F9A90BA17B0B72D3D /* Pods_Shellooo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shellooo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -688,6 +700,7 @@
 		4D36CC171FC4A530001F5F88 = {
 			isa = PBXGroup;
 			children = (
+				4D80765D1FC74DD8004729EB /* Swift + GIF.swift */,
 				4D8076391FC4C8A9004729EB /* Podfile */,
 				4D36CC221FC4A530001F5F88 /* Shellooo */,
 				4D36CC371FC4A530001F5F88 /* ShelloooTests */,
@@ -744,6 +757,11 @@
 		4D36CC531FC4AB96001F5F88 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				4D80765F1FC74F06004729EB /* shell2-295.png */,
+				4D8076671FC752E1004729EB /* shell2-024.png */,
+				4D8076711FC75900004729EB /* ShelloooHellooo7.png */,
+				4D8076611FC7520D004729EB /* ShellooLoadScreenFont.png */,
+				4D80765B1FC74BC1004729EB /* Shell2FullFAST.gif */,
 				4D8076521FC6A1AD004729EB /* mermaid */,
 				4D36CEA31FC4B10B001F5F88 /* shell */,
 			);
@@ -1209,6 +1227,7 @@
 				4D36D01A1FC4B10B001F5F88 /* shell-138.jpg in Resources */,
 				4D36D0A91FC4B10C001F5F88 /* shell-145.jpg in Resources */,
 				4D36D0E61FC4B10C001F5F88 /* shell-236.jpg in Resources */,
+				4D8076621FC7520D004729EB /* ShellooLoadScreenFont.png in Resources */,
 				4D36D0E41FC4B10C001F5F88 /* shell-20.jpg in Resources */,
 				4D36D0261FC4B10B001F5F88 /* shell-59.jpg in Resources */,
 				4D36CFE81FC4B10B001F5F88 /* shell-166.jpg in Resources */,
@@ -1289,6 +1308,7 @@
 				4D36D0A81FC4B10C001F5F88 /* shell-179.jpg in Resources */,
 				4D36CFE11FC4B10B001F5F88 /* shell-205.jpg in Resources */,
 				4D36D0901FC4B10C001F5F88 /* shell-121.jpg in Resources */,
+				4D8076601FC74F06004729EB /* shell2-295.png in Resources */,
 				4D36D07E1FC4B10C001F5F88 /* shell-97.jpg in Resources */,
 				4D36CC2E1FC4A530001F5F88 /* LaunchScreen.storyboard in Resources */,
 				4D36D03B1FC4B10B001F5F88 /* shell-114.jpg in Resources */,
@@ -1339,6 +1359,7 @@
 				4D36D0301FC4B10B001F5F88 /* shell-288.jpg in Resources */,
 				4D36D0CC1FC4B10C001F5F88 /* shell-194.jpg in Resources */,
 				4D36D06F1FC4B10C001F5F88 /* shell-246.jpg in Resources */,
+				4D8076681FC752E1004729EB /* shell2-024.png in Resources */,
 				4D36CFE61FC4B10B001F5F88 /* shell-12.jpg in Resources */,
 				4D36D0641FC4B10B001F5F88 /* shell-125.jpg in Resources */,
 				4D36CFCD1FC4B10B001F5F88 /* shell-170.jpg in Resources */,
@@ -1367,6 +1388,7 @@
 				4D36D0A61FC4B10C001F5F88 /* shell-186.jpg in Resources */,
 				4D36D05C1FC4B10B001F5F88 /* shell-47.jpg in Resources */,
 				4D36D03D1FC4B10B001F5F88 /* shell-116.jpg in Resources */,
+				4D80765C1FC74BC1004729EB /* Shell2FullFAST.gif in Resources */,
 				4D36D0201FC4B10B001F5F88 /* shell-266.jpg in Resources */,
 				4D36D0B51FC4B10C001F5F88 /* shell-150.jpg in Resources */,
 				4D36D00E1FC4B10B001F5F88 /* shell-67.jpg in Resources */,
@@ -1416,6 +1438,7 @@
 				4D36D0581FC4B10B001F5F88 /* shell-251.jpg in Resources */,
 				4D36CFD31FC4B10B001F5F88 /* shell-207.jpg in Resources */,
 				4D36D0BF1FC4B10C001F5F88 /* shell-32.jpg in Resources */,
+				4D8076731FC75901004729EB /* ShelloooHellooo7.png in Resources */,
 				4D36D0E51FC4B10C001F5F88 /* shell-8.jpg in Resources */,
 				4D8076511FC4F904004729EB /* Proxima Nova Alt Condensed Bold.otf in Resources */,
 				4D36D0CA1FC4B10C001F5F88 /* shell-184.jpg in Resources */,
@@ -1586,6 +1609,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D36CC261FC4A530001F5F88 /* ViewController.swift in Sources */,
+				4D80765E1FC74DD8004729EB /* Swift + GIF.swift in Sources */,
 				4D36CC241FC4A530001F5F88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

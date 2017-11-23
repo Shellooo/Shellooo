@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -21,18 +21,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Shellooo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shell-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3cB-AU-c2A">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <gestureRecognizers/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbP-Pg-jys">
-                                <rect key="frame" x="20" y="28" width="335" height="750"/>
+                                <rect key="frame" x="20" y="4" width="374" height="732"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="gZM-GO-tZA" userLabel="ASK SHELLOOO 2">
-                                        <rect key="frame" x="-2" y="111" width="337" height="102"/>
+                                        <rect key="frame" x="-2" y="93" width="376" height="120"/>
                                         <attributedString key="attributedText">
                                             <fragment content="ASK SHELLOOO">
                                                 <attributes>
@@ -45,7 +45,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="KPT-aV-re8">
-                                        <rect key="frame" x="0.0" y="109" width="337" height="120"/>
+                                        <rect key="frame" x="0.0" y="100" width="376" height="120"/>
                                         <attributedString key="attributedText">
                                             <fragment content="ASK SHELLOOO">
                                                 <attributes>
@@ -57,10 +57,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AiW-1g-bn4" userLabel="Label Animation View" customClass="CSAnimationView">
-                                        <rect key="frame" x="44.666666666666686" y="345" width="240" height="128"/>
+                                        <rect key="frame" x="64.333333333333314" y="336" width="240" height="128"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yass" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-f9-NA7">
-                                                <rect key="frame" x="62" y="49" width="117" height="30"/>
+                                                <rect key="frame" x="62.000000000000014" y="49" width="116.99999999999999" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="117" id="cNu-GU-AJn"/>
                                                 </constraints>
@@ -87,18 +87,18 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pU5-x9-N04" userLabel="Mermaid View" customClass="CSAnimationView">
-                                        <rect key="frame" x="-9" y="0.0" width="355" height="184"/>
+                                        <rect key="frame" x="-9" y="0.0" width="394" height="166"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QmP-oh-Eqy" userLabel="mermaid images">
-                                                <rect key="frame" x="146" y="9" width="201" height="144"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QmP-oh-Eqy" userLabel="mermaid images">
+                                                <rect key="frame" x="81" y="9" width="305" height="142"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.61812574144753163" blue="0.95791441405617606" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstItem="QmP-oh-Eqy" firstAttribute="leading" secondItem="pU5-x9-N04" secondAttribute="leading" constant="146" id="2cL-pJ-Gmp"/>
+                                            <constraint firstItem="QmP-oh-Eqy" firstAttribute="leading" secondItem="pU5-x9-N04" secondAttribute="leading" constant="81" id="2cL-pJ-Gmp"/>
                                             <constraint firstItem="QmP-oh-Eqy" firstAttribute="top" secondItem="pU5-x9-N04" secondAttribute="top" constant="9" id="2kf-F7-rxe"/>
                                             <constraint firstItem="QmP-oh-Eqy" firstAttribute="trailing" secondItem="pU5-x9-N04" secondAttribute="trailingMargin" id="4vA-qk-zsr"/>
-                                            <constraint firstAttribute="bottom" secondItem="QmP-oh-Eqy" secondAttribute="bottom" constant="31" id="9WI-a2-LnR"/>
+                                            <constraint firstAttribute="bottom" secondItem="QmP-oh-Eqy" secondAttribute="bottom" constant="15" id="9WI-a2-LnR"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="type" value="slideRight"/>
@@ -163,7 +163,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="135.19999999999999" y="130.88455772113943"/>
+            <point key="canvasLocation" x="134.78260869565219" y="130.43478260869566"/>
         </scene>
     </scenes>
     <resources>

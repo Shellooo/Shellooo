@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         {
             shakeCount = shakeCount + 1
             
-            let shellShakeQuotes=["Sure, be my guest","Oh Hey, Girl","Shake it like a salt shaker","You wanna be starting something","I'm a barbie girl","I'm not quite sure how to help you with that","You don't have to ask me for permission","If you have to ask...","Yes, go","I'm not going to judge","Yes, please","Hurry up, go!"]
+            let shellShakeQuotes=["Sure, be my guest","Oh Hey, Girl","Shake it like a salt shaker","You wanna be starting something","I'm a barbie girl","I'm not quite sure how to help you with that","You don't have to ask me for permission","If you have to ask...","Yes, go","I'm not going to judge","Yes, please","Hurry up, go!","You're so pretty…the answer is yes","Eww"]
             
             // Generate a random index
             
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         
         buttonCount = buttonCount + 1
         
-        let shellQuotes=["Shellooo says nooo","Eat some 🥑 🍞 & try again","AS IF!","It is certain, duh","You'll get the 🌹, girl","Too tired to tell. Ask me later","As I sea it, yes","Signs point to - YAY","Yassssss","Do you, girl","It's looking a bit wavy","Boy bye 👋","I better not say...","Eww","Super Doubtful","My reply is, oh SHELL-NOOO","Sorry, ain't lookin too good","You're so pretty…the answer is yes","Better not wait on that","Think, girl!! Ask again","My sources say..YES","My people say... NOPE","Let me ask my 🧜🏼‍♀️🧜🏼‍♀️🧜🏾‍♀️ and get back to you","I'm feeling hazy..ask again","Ask Siri, I'm a shell.","Namaste, No","No way. Drink rosé","I can't even….like give me a minute","IDK, Try Again 🤦🏽‍♀️","If there's a f#ckboy involved, NOO.","First of all…have you read your horoscope today?","WWKKD: What Would Kim K Do? ","Go for it. I won't tell anyone..." ,"MOOD. Do it","Yas, queen 👸🏾 ","Can you chill?","Well, you’re not not psycho","CUTE! Yes","Yes, my love","Byeeee 👋👋👋","I dare you"]
+        let shellQuotes=["Shellooo says nooo","Eat some 🥑 🍞 & try again","AS IF!","It is certain, duh","You'll get the 🌹, girl.","Too tired to tell. Ask me later","As I sea it, yes","Signs point to - YAY","Yassssss","Do you, girl.","It's looking a bit wavy","Boy bye 👋","I better not say...","Eww","Super Doubtful","My reply is, oh SHELL-NOOO","Sorry, ain't lookin too good","You're so pretty…the answer is yes","Better not wait on that","Think, girl!! Ask again","My sources say..YES","My people say... NOPE","Let me ask my 🧜🏼‍♀️🧜🏼‍♀️🧜🏾‍♀️ and get back to you","I'm feeling hazy..ask again","Ask Siri, I'm a shell.","Namaste, No","No way. Drink rosé","I can't even….like give me a minute","IDK, Try Again 🤦🏽‍♀️","If there's a f#ckboy involved, NOO.","First of all…have you read your horoscope today?","WWKKD: What Would Kim K Do? ","Go for it. I won't tell anyone..." ,"MOOD. Do it","Yas, queen 👸🏾 ","Can you chill?","Well, you’re not not psycho","CUTE! Yes","Yes, my love","Byeeeee 👋👋👋","I dare you"]
         
         // Generate a random index
         
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         let randomSaying = shellQuotes[randomIndex]
         magicSayingLabel.text = randomSaying; labelAnimation.startCanvasAnimation()
         if buttonCount > 5 {mermaidImages.isHidden = false}; mermaidAnimation.startCanvasAnimation()
-        if buttonCount > 7 {mermaidImages.isHidden = true}
+        if buttonCount > 6 {mermaidImages.isHidden = true}
   
     }
     
