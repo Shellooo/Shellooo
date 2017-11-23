@@ -314,6 +314,10 @@
 		4D80764E1FC4E7D8004729EB /* Proxima Nova Alt Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D80764B1FC4D477004729EB /* Proxima Nova Alt Regular.otf */; };
 		4D80764F1FC4E7DB004729EB /* Westfalia-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D80764C1FC4E2E5004729EB /* Westfalia-Regular.otf */; };
 		4D8076511FC4F904004729EB /* Proxima Nova Alt Condensed Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D8076501FC4F904004729EB /* Proxima Nova Alt Condensed Bold.otf */; };
+		4D8076571FC6A1AD004729EB /* mermaid-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8076531FC6A1AD004729EB /* mermaid-4.png */; };
+		4D8076581FC6A1AE004729EB /* mermaid-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8076541FC6A1AD004729EB /* mermaid-1.png */; };
+		4D8076591FC6A1AE004729EB /* mermaid-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8076551FC6A1AD004729EB /* mermaid-2.png */; };
+		4D80765A1FC6A1AE004729EB /* mermaid-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8076561FC6A1AD004729EB /* mermaid-3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -647,6 +651,10 @@
 		4D80764B1FC4D477004729EB /* Proxima Nova Alt Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Regular.otf"; sourceTree = "<group>"; };
 		4D80764C1FC4E2E5004729EB /* Westfalia-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Westfalia-Regular.otf"; sourceTree = "<group>"; };
 		4D8076501FC4F904004729EB /* Proxima Nova Alt Condensed Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Condensed Bold.otf"; sourceTree = "<group>"; };
+		4D8076531FC6A1AD004729EB /* mermaid-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mermaid-4.png"; sourceTree = "<group>"; };
+		4D8076541FC6A1AD004729EB /* mermaid-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mermaid-1.png"; sourceTree = "<group>"; };
+		4D8076551FC6A1AD004729EB /* mermaid-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mermaid-2.png"; sourceTree = "<group>"; };
+		4D8076561FC6A1AD004729EB /* mermaid-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mermaid-3.png"; sourceTree = "<group>"; };
 		8503C5AD1461CC0C6347770C /* Pods-Shellooo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shellooo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shellooo/Pods-Shellooo.debug.xcconfig"; sourceTree = "<group>"; };
 		F797696F9A90BA17B0B72D3D /* Pods_Shellooo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shellooo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -736,6 +744,7 @@
 		4D36CC531FC4AB96001F5F88 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				4D8076521FC6A1AD004729EB /* mermaid */,
 				4D36CEA31FC4B10B001F5F88 /* shell */,
 			);
 			path = Sprites;
@@ -1054,6 +1063,17 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		4D8076521FC6A1AD004729EB /* mermaid */ = {
+			isa = PBXGroup;
+			children = (
+				4D8076541FC6A1AD004729EB /* mermaid-1.png */,
+				4D8076551FC6A1AD004729EB /* mermaid-2.png */,
+				4D8076561FC6A1AD004729EB /* mermaid-3.png */,
+				4D8076531FC6A1AD004729EB /* mermaid-4.png */,
+			);
+			path = mermaid;
+			sourceTree = "<group>";
+		};
 		651C27AA22FAEDFC338DA58D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1251,6 +1271,7 @@
 				4D36D0EA1FC4B10C001F5F88 /* shell-9.jpg in Resources */,
 				4D36D03C1FC4B10B001F5F88 /* shell-102.jpg in Resources */,
 				4D36D08D1FC4B10C001F5F88 /* shell-96.jpg in Resources */,
+				4D8076571FC6A1AD004729EB /* mermaid-4.png in Resources */,
 				4D36D0451FC4B10B001F5F88 /* shell-261.jpg in Resources */,
 				4D36D0C11FC4B10C001F5F88 /* shell-224.jpg in Resources */,
 				4D36D0C51FC4B10C001F5F88 /* shell-219.jpg in Resources */,
@@ -1401,6 +1422,7 @@
 				4D36D05E1FC4B10B001F5F88 /* shell-84.jpg in Resources */,
 				4D36D09B1FC4B10C001F5F88 /* shell-269.jpg in Resources */,
 				4D36CFEF1FC4B10B001F5F88 /* shell-16.jpg in Resources */,
+				4D8076581FC6A1AE004729EB /* mermaid-1.png in Resources */,
 				4D36D0B21FC4B10C001F5F88 /* shell-24.jpg in Resources */,
 				4D36CFFD1FC4B10B001F5F88 /* shell-149.jpg in Resources */,
 				4D36D05A1FC4B10B001F5F88 /* shell-286.jpg in Resources */,
@@ -1468,6 +1490,7 @@
 				4D36D0251FC4B10B001F5F88 /* shell-65.jpg in Resources */,
 				4D36D03F1FC4B10B001F5F88 /* shell-76.jpg in Resources */,
 				4D36D0AD1FC4B10C001F5F88 /* shell-25.jpg in Resources */,
+				4D80765A1FC6A1AE004729EB /* mermaid-3.png in Resources */,
 				4D36D0761FC4B10C001F5F88 /* shell-87.jpg in Resources */,
 				4D36D0471FC4B10B001F5F88 /* shell-63.jpg in Resources */,
 				4D36D0B91FC4B10C001F5F88 /* shell-187.jpg in Resources */,
@@ -1479,6 +1502,7 @@
 				4D36D06E1FC4B10C001F5F88 /* shell-252.jpg in Resources */,
 				4D36D0051FC4B10B001F5F88 /* shell-28.jpg in Resources */,
 				4D36D0F01FC4B10C001F5F88 /* shell-196.jpg in Resources */,
+				4D8076591FC6A1AE004729EB /* mermaid-2.png in Resources */,
 				4D36D0281FC4B10B001F5F88 /* shell-111.jpg in Resources */,
 				4D36D0041FC4B10B001F5F88 /* shell-216.jpg in Resources */,
 				4D36D0781FC4B10C001F5F88 /* shell-130.jpg in Resources */,
