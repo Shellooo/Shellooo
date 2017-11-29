@@ -20,8 +20,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shell2-024.png" translatesAutoresizingMaskIntoConstraints="NO" id="hAS-nd-H5Q">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shellstill-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hAS-nd-H5Q">
+                                <rect key="frame" x="0.0" y="-34" width="375" height="701"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShelloooHellooo7.png" translatesAutoresizingMaskIntoConstraints="NO" id="BRe-OD-jOk">
                                 <rect key="frame" x="16" y="35" width="343" height="128"/>
@@ -29,14 +29,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hAS-nd-H5Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="8PB-Ts-gmW"/>
+                            <constraint firstItem="hAS-nd-H5Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-54" id="8PB-Ts-gmW"/>
                             <constraint firstItem="BRe-OD-jOk" firstAttribute="leading" secondItem="hAS-nd-H5Q" secondAttribute="trailing" constant="-359" id="CY4-TA-N8u"/>
                             <constraint firstItem="BRe-OD-jOk" firstAttribute="leading" secondItem="hAS-nd-H5Q" secondAttribute="leading" constant="16" id="GsK-hY-v90"/>
                             <constraint firstItem="hAS-nd-H5Q" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" constant="16" id="JpE-y6-MQg"/>
-                            <constraint firstItem="BRe-OD-jOk" firstAttribute="centerY" secondItem="hAS-nd-H5Q" secondAttribute="centerY" constant="-234.5" id="S5q-wH-N5j"/>
+                            <constraint firstItem="BRe-OD-jOk" firstAttribute="centerY" secondItem="hAS-nd-H5Q" secondAttribute="centerY" constant="-217.5" id="S5q-wH-N5j"/>
                             <constraint firstItem="BRe-OD-jOk" firstAttribute="trailing" secondItem="hAS-nd-H5Q" secondAttribute="trailing" constant="-16" id="WYN-7m-AiQ"/>
-                            <constraint firstItem="BRe-OD-jOk" firstAttribute="top" secondItem="hAS-nd-H5Q" secondAttribute="top" constant="35" id="eWl-Mh-xKE"/>
-                            <constraint firstItem="hAS-nd-H5Q" firstAttribute="top" secondItem="BRe-OD-jOk" secondAttribute="bottom" constant="-163" id="g5M-2d-mZb"/>
+                            <constraint firstItem="BRe-OD-jOk" firstAttribute="top" secondItem="hAS-nd-H5Q" secondAttribute="top" constant="69" id="eWl-Mh-xKE"/>
+                            <constraint firstItem="hAS-nd-H5Q" firstAttribute="top" secondItem="BRe-OD-jOk" secondAttribute="bottom" constant="-197" id="g5M-2d-mZb"/>
                             <constraint firstItem="hAS-nd-H5Q" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-16" id="iTU-VX-zbe"/>
                             <constraint firstItem="BRe-OD-jOk" firstAttribute="centerX" secondItem="hAS-nd-H5Q" secondAttribute="centerX" id="pjU-Bq-dxE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hAS-nd-H5Q" secondAttribute="bottom" id="pkv-gN-tIC"/>
@@ -54,6 +54,6 @@
     </scenes>
     <resources>
         <image name="ShelloooHellooo7.png" width="1169" height="267"/>
-        <image name="shell2-024.png" width="720" height="1200"/>
+        <image name="shellstill-1.jpg" width="720" height="1200"/>
     </resources>
 </document>

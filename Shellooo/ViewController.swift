@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     var buttonCount = 0
     var shakeCount = 0
     var shellImages: [UIImage] = []
-    
+
     @IBOutlet weak var mermaidImages: UIImageView!
     @IBOutlet weak var mermaidAnimation: UIView!
     @IBOutlet weak var labelAnimation: CSAnimationView!
@@ -39,6 +39,9 @@ class ViewController: UIViewController {
             magicSayingLabel.text = randomShakeSaying; labelAnimation.startCanvasAnimation()
         }
     }
+
+
+    
     
     @IBAction func tapTapTap(_ sender: Any) {
         
@@ -56,9 +59,11 @@ class ViewController: UIViewController {
         magicSayingLabel.text = randomSaying; labelAnimation.startCanvasAnimation()
         if buttonCount > 5 {mermaidImages.isHidden = false}; mermaidAnimation.startCanvasAnimation()
         if buttonCount > 6 {mermaidImages.isHidden = true}
-  
-    }
+        if buttonCount == 10 {performSegue(withIdentifier: "tap10", sender: self)}
     
+        
+    }
+
     
     //OVERRIDE FUNC VIEW DIDLOAD
     
@@ -73,6 +78,7 @@ class ViewController: UIViewController {
     
         magicSayingLabel.text = "Shake or Tap. Duh"
         mermaidImages.isHidden = true
+    
         
         var mermaidImageNames = ["mermaid-1.png","mermaid-2.png","mermaid-3.png","mermaid-4.png"]
         var mermaidImagesVar = [UIImage]()
@@ -82,6 +88,7 @@ class ViewController: UIViewController {
         mermaidImages.animationImages = mermaidImagesVar
         mermaidImages.animationDuration = 1.5
         mermaidImages.startAnimating()
+
     }
 
     func createImageArray(total: Int, imagePrefix: String) -> [UIImage] {
@@ -108,6 +115,9 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    
+        
+    
     }
 
 }
