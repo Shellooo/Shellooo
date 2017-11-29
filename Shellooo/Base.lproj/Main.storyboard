@@ -14,9 +14,6 @@
         <array key="Proxima Nova Alt Regular.otf">
             <string>ProximaNovaA-Regular</string>
         </array>
-        <array key="Westfalia-Regular.otf">
-            <string>Westfalia-Regular</string>
-        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -27,7 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shell-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3cB-AU-c2A">
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shellstill-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3cB-AU-c2A">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <gestureRecognizers/>
                             </imageView>
@@ -60,10 +57,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AiW-1g-bn4" userLabel="Label Animation View" customClass="CSAnimationView">
-                                        <rect key="frame" x="64.333333333333314" y="336" width="240" height="128"/>
+                                        <rect key="frame" x="64.666666666666686" y="336" width="240" height="128"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yass" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-f9-NA7">
-                                                <rect key="frame" x="62.000000000000014" y="53" width="116.99999999999999" height="32"/>
+                                                <rect key="frame" x="61.999999999999986" y="53" width="117.00000000000001" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="117" id="cNu-GU-AJn"/>
                                                 </constraints>
@@ -82,7 +79,7 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                                <integer key="value" value="2"/>
+                                                <real key="value" value="2.5"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="delay">
                                                 <integer key="value" value="0"/>
@@ -157,7 +154,6 @@
                         <outlet property="mermaidAnimation" destination="pU5-x9-N04" id="m9k-a2-9bx"/>
                         <outlet property="mermaidImages" destination="QmP-oh-Eqy" id="0ev-u3-KOx"/>
                         <outlet property="shellooBackground" destination="3cB-AU-c2A" id="TiA-ji-qYb"/>
-                        <segue destination="zgN-gE-Vut" kind="show" identifier="tap10" id="mRL-wX-RIv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -169,47 +165,9 @@
             </objects>
             <point key="canvasLocation" x="134.78260869565219" y="130.43478260869566"/>
         </scene>
-        <!--View Controller2-->
-        <scene sceneID="Kul-Xz-oAh">
-            <objects>
-                <viewController id="zgN-gE-Vut" customClass="ViewController2" customModule="Shellooo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="C1U-nD-sHX" userLabel="Scene2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shell2GIF.gif" translatesAutoresizingMaskIntoConstraints="NO" id="gT1-vu-k52">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YASSSS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="MVB-TY-TeX">
-                                <rect key="frame" x="20" y="90" width="374" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Westfalia-Regular" family="Westfalia" pointSize="100"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="gsK-7L-wet" firstAttribute="top" secondItem="gT1-vu-k52" secondAttribute="top" constant="20" id="OTu-tx-gaD"/>
-                            <constraint firstItem="gT1-vu-k52" firstAttribute="leading" secondItem="gsK-7L-wet" secondAttribute="leading" id="e1T-z7-qFn"/>
-                            <constraint firstItem="gT1-vu-k52" firstAttribute="centerX" secondItem="gsK-7L-wet" secondAttribute="centerX" id="ic5-IA-Bwt"/>
-                            <constraint firstItem="gT1-vu-k52" firstAttribute="centerY" secondItem="gsK-7L-wet" secondAttribute="centerY" constant="-10" id="iph-oG-BJV"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="gsK-7L-wet"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="OYP-sx-M21"/>
-                    <connections>
-                        <outlet property="shell2BackgroundGif" destination="gT1-vu-k52" id="uxQ-Aw-ShA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kef-en-3yT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="940.57971014492762" y="129.61956521739131"/>
-        </scene>
     </scenes>
     <resources>
         <image name="mermaid-1.png" width="7608" height="2199"/>
-        <image name="shell-1.jpg" width="720" height="1200"/>
-        <image name="shell2GIF.gif" width="720" height="1200"/>
+        <image name="shellstill-1.jpg" width="720" height="1200"/>
     </resources>
 </document>
