@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         
         buttonCount = buttonCount + 1
         
-        let shellQuotes=["Shellooo says nooo","Eat some 🥑 🍞 & try again","AS IF!","It is certain - duh","You'll get the 🌹, girl.","Too tired to tell. Ask me later","As I sea it, yes","Signs point to - YAY","Yassssss","Do you, girl.","It's looking a bit wavy","Boy bye 👋","I better not say...","Eww","Super Doubtful","My reply is, oh SHELL-NOOO","Sorry, ain't lookin too good","You're so pretty…the answer is yes","Better not wait on that","Think, girl!! Ask again","My sources say..YES","My people say... NOPE","Let me ask my 🧜🏼‍♀️🧜🏼‍♀️🧜🏾‍♀️ and get back to you","I'm feeling hazy..ask again","Ask Siri, I'm a shell.","Namaste, No","No way. Drink rosé","I can't even….like give me a minute","IDK, Try Again 🤦🏽‍♀️","NOOO...and you know it","First of all…have you read your horoscope today?","WWKKD: What Would Kim K Do? ","Go for it. I won't tell anyone..." ,"MOOD. Do it","Yas, queen 👸🏾 ","Can you chill?","Well, you’re not not psycho","CUTE! Yes","Yes, my love","Byeeeee 👋👋👋","I dare you"]
+        let shellQuotes=["Shellooo says nooo","Eat some 🥑 🍞 & try again","AS IF!","It is certain - duh","You'll get the 🌹, girl.","Too tired to tell. Ask me later","As I sea it, yes","Signs point to - YAY","Yassssss","Do you, girl.","It's looking a bit wavy","Boy bye 👋","I better not say...","Eww","Super Doubtful","My reply is, oh SHELL-NOOO","Sorry, ain't lookin too good","You're so pretty…the answer is yes","Better not wait on that","Think, girl!! Ask again","My sources say..YES","My people say... NOPE","Let me ask my 🧜🏼‍♀️🧜🏼‍♀️🧜🏾‍♀️ and get back to you","I'm feeling hazy..ask again","Ask Siri, I'm a shell.","Namaste, No","No way. Drink rosé","I can't even….like give me a minute","IDK, Try Again 🤦🏽‍♀️","NOOO... and you know it","First of all…have you read your horoscope today?","WWKKD: What Would Kim K Do? ","Go for it. I won't tell anyone..." ,"MOOD. Do it","Yas, queen 👸🏾 ","Can you chill?","Well, you’re not not psycho","CUTE! Yes","Yes, my love","Byeeeee 👋👋👋","I dare you"]
         
         // Generate a random index
         
@@ -69,10 +69,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-shellooBackground.loadGif(name: "Shell1GIF")
+//shellooBackground.loadGif(name: "Shell1GIF")
  
-    //    shellImages = createImageArray(total: 295, imagePrefix: "shell")
-    //   animate(imageView: shellooBackground, images: shellImages)
+    shellImages = createImageArray(total: 295, imagePrefix: "shell")
+    animate(imageView: shellooBackground, images: shellImages)
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -91,7 +91,7 @@ shellooBackground.loadGif(name: "Shell1GIF")
 
     }
 
-    /* func createImageArray(total: Int, imagePrefix: String) -> [UIImage] {
+     func createImageArray(total: Int, imagePrefix: String) -> [UIImage] {
     
         var imageArray: [UIImage] = []
         
@@ -111,7 +111,7 @@ shellooBackground.loadGif(name: "Shell1GIF")
         imageView.animationDuration = 18
         imageView.startAnimating()
     }
-    */
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
