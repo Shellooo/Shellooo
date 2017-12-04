@@ -39,8 +39,6 @@ class ViewController: UIViewController {
             magicSayingLabel.text = randomShakeSaying; labelAnimation.startCanvasAnimation()
         }
     }
-
-
     
     
     @IBAction func tapTapTap(_ sender: Any) {
@@ -64,7 +62,7 @@ class ViewController: UIViewController {
     }
 
     
-    //OVERRIDE FUNC VIEW DIDLOAD
+//OVERRIDE FUNC VIEW DIDLOAD
     
     override func viewDidLoad() {
         super.viewDidLoad()
