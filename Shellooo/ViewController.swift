@@ -11,7 +11,7 @@ import Canvas
 
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var shellooBackground: UIImageView!
     @IBOutlet weak var magicSayingLabel: UILabel!
     var buttonCount = 0
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         
         buttonCount = buttonCount + 1
         
-        let shellQuotes=["It is certain - duh","As I sea it, yes","Signs point to - YAY","Yassssss","Signs point to - YASSS","You do you","My reply is YASSS","You're so pretty…the answer is yes","You're so pretty...but the answer is no","My sources say..YES","Go for it. I won't tell anyone...","I’m all about it","MOOD. Do it","Yas queen 👸🏾","Well, you’re not not psycho","Totally! Yes","Yes, my love","I dare you","Shellooo says NOOO","AS IF!","It's looking a bit wavy","Sorry, no","Nahhh","Eww","OMG, NO","No no no no no no NO","Suuuper Doubtful","I doubt it","My reply is oh SHELL-NOOO","My reply is NAH","Sorry, ain't lookin too good","Better not wait on it","My people say... NOPE","No way rosé","NOOO... and you know it","No, Byeee 👋","I’m way too tired, ask again later","I better not say…","Think hard, ask again","Let me ask my 🧜🏼‍♀️🧜🏼‍♀️🧜🏾‍♀️ and get back to you","I'm feeling hazy..ask again","Ask Siri, I'm a shell","I can't even rn…","I can't even…like give me a minute","IDK, Try Again 🤦🏽‍♀️","First of all…have you read your horoscope today?","WWKKD: What Would Kim K Do?","Eat some 🥑 🍞 & try again","AS IF!","Keep it 100, Yes"]
+        let shellQuotes=["It is certain - duh","As I sea it, yes","Signs point to - YAY","Yassssss","Signs point to YASSS","You do you","My reply is YASSS","You're so pretty…the answer is yes","You're so pretty...but the answer is no","My sources say..YES","Go for it. I won't tell anyone...","I’m all about it","MOOD. Do it","Yas queen 👸🏾","Well, you’re not not psycho","Totally! Yes","Yes, my love","I dare you","Shellooo says NOOO","AS IF!","It's looking a bit wavy","Sorry, no","Nahhh","Eww","OMG, NO","No no no no no no NO","Suuuper Doubtful","I doubt it","My reply is oh SHELL-NOOO","My reply is NAH","Sorry, ain't lookin too good","Better not wait on it","My people say... NOPE","No way rosé","NOOO... and you know it","No, Byeee 👋","I’m way too tired, ask again later","I better not say…","Think hard, ask again","Let me ask my 🧜🏼‍♀️🧜🏼‍♀️🧜🏾‍♀️ and get back to you","I'm feeling hazy..ask again","Ask Siri, I'm a shell","I can't even rn…","I can't even…like give me a minute","IDK, Try Again 🤦🏽‍♀️","First of all…have you read your horoscope today?","WWKKD: What Would Kim K Do?","Eat some 🥑 🍞 & try again","AS IF!","Keep it 100, Yes"]
         
         // Generate a random index
         
@@ -60,24 +60,27 @@ class ViewController: UIViewController {
         if buttonCount > 9 {mermaidImages.isHidden = false}; mermaidAnimation.startCanvasAnimation()
         if buttonCount > 10 {mermaidImages.isHidden = true};
     }
-
     
-//OVERRIDE FUNC VIEW DIDLOAD
+    
+    //OVERRIDE FUNC VIEW DIDLOAD
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//shellooBackground.loadGif(name: "Shell1GIF")
- 
-    shellImages = createImageArray(total: 295, imagePrefix: "shell")
-    animate(imageView: shellooBackground, images: shellImages)
-        
+        //shellooBackground.loadGif(name: "Shell1GIF")
+        DispatchQueue.global(qos: .userInitiated).async {
+            let shellImages = self.createImageArray(total: 295, imagePrefix: "shell")
+            
+            DispatchQueue.main.async {
+                self.animate(imageView: self.shellooBackground, images: shellImages)
+            }
+        }
         
         // Do any additional setup after loading the view, typically from a nib.
-    
+        
         magicSayingLabel.text = "Shake or Tap. Duh"
         mermaidImages.isHidden = true
-
+        
         var mermaidImageNames = ["mermaid-1.png","mermaid-2.png","mermaid-3.png","mermaid-4.png"]
         var mermaidImagesVar = [UIImage]()
         for i in 0..<mermaidImageNames.count{
@@ -86,38 +89,38 @@ class ViewController: UIViewController {
         mermaidImages.animationImages = mermaidImagesVar
         mermaidImages.animationDuration = 1.5
         mermaidImages.startAnimating()
-
+        
     }
-
-     func createImageArray(total: Int, imagePrefix: String) -> [UIImage] {
     
+    func createImageArray(total: Int, imagePrefix: String) -> [UIImage] {
+        
         var imageArray: [UIImage] = []
         
         for imageCount in 1..<total {
             let imageName = "\(imagePrefix)-\(imageCount).jpg"
             let image = UIImage(named: imageName)!
-       
+            
             imageArray.append(image)
         }
         return imageArray
     }
-   
-
+    
+    
     
     func animate(imageView: UIImageView, images: [UIImage]) {
         imageView.animationImages = images
         imageView.animationDuration = 18
         imageView.startAnimating()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    
         
-    
+        
+        
     }
-
+    
 }
 
 
