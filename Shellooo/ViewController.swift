@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         {
             shakeCount = shakeCount + 1
             
-            let shellShakeQuotes=["Sure","It’s a yes from me","Make it happen","Yassssss","You don't have to ask me for permission","Yes, go for it","Do it","Umm.. maybe think again","My 🧜🏿‍♀️🧜🏻‍♀️🧜🏼‍♀️ say yes”","Yes!","Eww","I can't give you the green light for that","I'm not quite sure how to help you with that","Yas queen 👸🏼","Go for it. I won't tell anyone...","You're so pretty…the answer is yes","It is certain - DUH","Signs point to - YASSS","OMG, NO","Shellooo says NOOO","I can't even rn…","Let me ask my 🧜🏼‍♀️🧜🏼‍♀️🧜🏾‍♀️ and get back to you","Shellooo says YUP"]
+            let shellShakeQuotes=["Sure","It’s a yes from me","Make it happen","Yassssss","You don't have to ask me for permission","Yes, go for it","Do it","Umm.. maybe think again","My 🧜🏿‍♀️🧜🏻‍♀️🧜🏼‍♀️ say yes","Yes!","Eww","I can't give you the green light for that","Obviously yes","Yas queen 👸🏼","Go for it. I won't tell anyone...","You're so pretty…the answer is yes","It is certain - DUH","Signs point to - YASSS","OMG, NO","Shellooo says NOOO","Sorry, no","Nahhh","Eww","OMG, NO","I can't even rn…","Let me ask my 🧜🏼‍♀️🧜🏼‍♀️🧜🏾‍♀️ and get back to you","Shellooo says YUP","Totally! Yes"]
             
             // Generate a random index
             
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         
         buttonCount = buttonCount + 1
         
-        let shellQuotes=["It is certain - duh","As I sea it, yes","Signs point to - YAY","Yassssss","Signs point to YASSS","You do you","My reply is YASSS","You're so pretty…the answer is yes","You're so pretty...but the answer is no","My sources say..YES","Go for it. I won't tell anyone...","I’m all about it","MOOD. Do it","Yas queen 👸🏾","Well, you’re not not psycho","Totally! Yes","Yes, my love","I dare you","Shellooo says NOOO","AS IF!","It's looking a bit wavy","Sorry, no","Nahhh","Eww","OMG, NO","No no no no no no NO","Suuuper Doubtful","I doubt it","My reply is oh SHELL-NOOO","My reply is NAH","Sorry, ain't lookin too good","Better not wait on it","My people say... NOPE","No way rosé","NOOO... and you know it","No, Byeee 👋","I’m way too tired, ask again later","I better not say…","Think hard, ask again","Let me ask my 🧜🏼‍♀️🧜🏼‍♀️🧜🏾‍♀️ and get back to you","I'm feeling hazy..ask again","Ask Siri, I'm a shell","I can't even rn…","I can't even…like give me a minute","IDK, Try Again 🤦🏽‍♀️","First of all…have you read your horoscope today?","WWKKD: What Would Kim K Do?","Eat some 🥑 🍞 & try again","AS IF!","Couldnt be more certain","Tots yes","Way cool, yes"]
+        let shellQuotes=["It's a total yes","It is certain - duh","As I sea it, yes","Signs point to - YAY","Yassssss","Signs point to YASSS","You do you","My reply is YASSS","You're so pretty…the answer is yes","You're so pretty...but the answer is no","My sources say..YES","Go for it - I won't tell anyone...","I’m all about it","MOOD. Do it","Yas queen 👸🏾","Well, you’re not not psycho","Totally! Yes","Yes, my love","I dare you","Shellooo says NOOO","AS IF!","It's looking a bit wavy","Yes, yes, yes!","It's so a yes","no no no no no no NOPE","Suuuper Doubtful","I doubt it","My reply is oh SHELL-NOOO","My reply is oh SHELL-YEA","My reply is NAH","Sorry, ain't lookin too good","Better not wait on it","My people say... NOPE","No way rosé","NOOO... and you know it","No, Byeee 👋","I’m way too tired, ask again later","I better not say…","Think hard, ask again","Let me ask my 🧜🏼‍♀️🧜🏼‍♀️🧜🏾‍♀️ and get back to you","I'm feeling hazy..ask again","Ask Siri, I'm a shell","I can't even rn…","I can't even…like give me a minute","IDK, Try Again 🤦🏽‍♀️","First of all…have you read your horoscope today?","If you read your horoscope, you'd know","Like, YEAH!","Eat some 🥑 🍞 & try again","AS IF!","Couldn't be more certain","Tots yes","Way cool, yes"]
         
         // Generate a random index
         
@@ -67,14 +67,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //shellooBackground.loadGif(name: "Shell1GIF")
+        
         DispatchQueue.global(qos: .userInitiated).async {
-            let shellImages = self.createImageArray(total: 295, imagePrefix: "shell")
-            
-            DispatchQueue.main.async {
-                self.animate(imageView: self.shellooBackground, images: shellImages)
-            }
-        }
+        let shellImages = self.createImageArray(total: 295, imagePrefix: "shell")
+        
+        DispatchQueue.main.async {
+          self.animate(imageView: self.shellooBackground, images: shellImages)
+          }
+          }
         
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -92,26 +92,28 @@ class ViewController: UIViewController {
         
     }
     
-    func createImageArray(total: Int, imagePrefix: String) -> [UIImage] {
-        
-        var imageArray: [UIImage] = []
-        
-        for imageCount in 1..<total {
-            let imageName = "\(imagePrefix)-\(imageCount).jpg"
-            let image = UIImage(named: imageName)!
-            
-            imageArray.append(image)
-        }
-        return imageArray
-    }
-    
-    
-    
-    func animate(imageView: UIImageView, images: [UIImage]) {
-        imageView.animationImages = images
-        imageView.animationDuration = 18
-        imageView.startAnimating()
-    }
+ 
+     func createImageArray(total: Int, imagePrefix: String) -> [UIImage] {
+     
+     var imageArray: [UIImage] = []
+     
+     for imageCount in 1..<total {
+     let imageName = "\(imagePrefix)-\(imageCount).jpg"
+     let image = UIImage(named: imageName)!
+     
+     imageArray.append(image)
+     }
+     return imageArray
+     }
+     
+     
+     
+     func animate(imageView: UIImageView, images: [UIImage]) {
+     imageView.animationImages = images
+     imageView.animationDuration = 18
+     imageView.startAnimating()
+     }
+     
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

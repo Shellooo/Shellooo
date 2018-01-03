@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shellstill-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3cB-AU-c2A">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="770"/>
+                                <rect key="frame" x="0.0" y="-12" width="414" height="794"/>
                                 <gestureRecognizers/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbP-Pg-jys">
@@ -45,7 +45,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="KPT-aV-re8">
-                                        <rect key="frame" x="0.0" y="101.66666666666666" width="376" height="116.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="100" width="376" height="120"/>
                                         <attributedString key="attributedText">
                                             <fragment content="ASK SHELLOOO">
                                                 <attributes>
@@ -81,10 +81,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AiW-1g-bn4" userLabel="Label Animation View" customClass="CSAnimationView">
-                                        <rect key="frame" x="64" y="355" width="240" height="128"/>
+                                        <rect key="frame" x="64.333333333333314" y="355" width="240" height="128"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yass" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-f9-NA7">
-                                                <rect key="frame" x="62" y="54.000000000000007" width="117" height="30.333333333333336"/>
+                                                <rect key="frame" x="62.000000000000014" y="53" width="116.99999999999999" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="117" id="cNu-GU-AJn" userLabel="width = 113"/>
                                                 </constraints>
@@ -103,7 +103,7 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                                <real key="value" value="2.7000000000000002"/>
+                                                <real key="value" value="2.7999999999999998"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="delay">
                                                 <integer key="value" value="0"/>
@@ -137,10 +137,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pU5-x9-N04" secondAttribute="trailing" constant="9" id="Oy9-ac-fMS"/>
                             <constraint firstItem="KPT-aV-re8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Pwr-js-Ld6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="gZM-GO-tZA" secondAttribute="bottom" constant="-197" id="Sbd-pm-CV8" userLabel="Safe Area.trailing = ASK SHELLOOO 2.trailing + 19"/>
-                            <constraint firstItem="3cB-AU-c2A" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="UMq-9g-O6V"/>
+                            <constraint firstItem="3cB-AU-c2A" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="46" id="UMq-9g-O6V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cbP-Pg-jys" secondAttribute="trailing" constant="20" id="b1e-JY-XZ5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cbP-Pg-jys" secondAttribute="bottom" id="hsz-9w-L2I"/>
-                            <constraint firstItem="3cB-AU-c2A" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="i6l-Q3-gQg"/>
+                            <constraint firstItem="3cB-AU-c2A" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-12" id="i6l-Q3-gQg"/>
                             <constraint firstItem="cbP-Pg-jys" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-16" id="jhj-H6-KVq"/>
                             <constraint firstItem="cbP-Pg-jys" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pC5-jT-RVd"/>
                             <constraint firstItem="pU5-x9-N04" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="11" id="uoA-e1-Ynq"/>
