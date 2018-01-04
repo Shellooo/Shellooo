@@ -40,9 +40,9 @@ class ViewController: UIViewController {
             let randomShakeSaying = shellShakeQuotes[randomShakeIndex]
             magicSayingLabel.text = randomShakeSaying; labelAnimation.startCanvasAnimation()
         }
-        if shakeCount == 1 {glitterGIF.isHidden = false}
+        if shakeCount == 1 {glitterGIF.isHidden = false}; glitterView.startCanvasAnimation()
         if shakeCount > 1 {glitterGIF.isHidden = true}
-        if shakeCount == 7 {glitterGIF.isHidden = false}
+        if shakeCount == 7 {glitterGIF.isHidden = false}; glitterView.startCanvasAnimation()
         if shakeCount > 7 {glitterGIF.isHidden = true}
     }
     
