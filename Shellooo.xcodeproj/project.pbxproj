@@ -13,6 +13,7 @@
 		4D36CC291FC4A530001F5F88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D36CC271FC4A530001F5F88 /* Main.storyboard */; };
 		4D36CC2B1FC4A530001F5F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D36CC2A1FC4A530001F5F88 /* Assets.xcassets */; };
 		4D36CC2E1FC4A530001F5F88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D36CC2C1FC4A530001F5F88 /* LaunchScreen.storyboard */; };
+		4D5008321FFED28500D76865 /* glitter.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4D5008311FFED28400D76865 /* glitter.gif */; };
 		4D51238E1FDF04D9004C2002 /* shell-158.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D5122661FDF04D8004C2002 /* shell-158.jpg */; };
 		4D51238F1FDF04D9004C2002 /* shell-164.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D5122671FDF04D8004C2002 /* shell-164.jpg */; };
 		4D5123901FDF04D9004C2002 /* shell-170.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D5122681FDF04D8004C2002 /* shell-170.jpg */; };
@@ -349,6 +350,7 @@
 		4D36CC2F1FC4A530001F5F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D36CC341FC4A530001F5F88 /* ShelloooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShelloooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D36CC3F1FC4A530001F5F88 /* ShelloooUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShelloooUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5008311FFED28400D76865 /* glitter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = glitter.gif; path = "../../Glitter Animation/glitter.gif"; sourceTree = "<group>"; };
 		4D5122661FDF04D8004C2002 /* shell-158.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "shell-158.jpg"; sourceTree = "<group>"; };
 		4D5122671FDF04D8004C2002 /* shell-164.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "shell-164.jpg"; sourceTree = "<group>"; };
 		4D5122681FDF04D8004C2002 /* shell-170.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "shell-170.jpg"; sourceTree = "<group>"; };
@@ -710,6 +712,7 @@
 		4D36CC221FC4A530001F5F88 /* Shellooo */ = {
 			isa = PBXGroup;
 			children = (
+				4D5008311FFED28400D76865 /* glitter.gif */,
 				4D80764D1FC4E7B2004729EB /* Resources */,
 				4D36CC531FC4AB96001F5F88 /* spirites */,
 				4D36CC231FC4A530001F5F88 /* AppDelegate.swift */,
@@ -1241,6 +1244,7 @@
 				4D5123D81FDF04D9004C2002 /* shell-203.jpg in Resources */,
 				4D51246F1FDF04D9004C2002 /* shell-61.jpg in Resources */,
 				4D5124601FDF04D9004C2002 /* shell-13.jpg in Resources */,
+				4D5008321FFED28500D76865 /* glitter.gif in Resources */,
 				4D5123AB1FDF04D9004C2002 /* shell-81.jpg in Resources */,
 				4D8076571FC6A1AD004729EB /* mermaid-4.png in Resources */,
 				4D5124581FDF04D9004C2002 /* shell-282.jpg in Resources */,

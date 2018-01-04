@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     var shakeCount = 0
     var shellImages: [UIImage] = []
     
+    @IBOutlet weak var glitterGIF: UIImageView!
+    @IBOutlet weak var glitterView: UIView!
     @IBOutlet weak var mermaidImages: UIImageView!
     @IBOutlet weak var mermaidAnimation: UIView!
     @IBOutlet weak var labelAnimation: CSAnimationView!
@@ -27,7 +29,7 @@ class ViewController: UIViewController {
         {
             shakeCount = shakeCount + 1
             
-            let shellShakeQuotes=["Sure","It’s a yes from me","Make it happen","Yassssss","You don't have to ask me for permission","Yes, go for it","Do it","Umm.. maybe think again","My 🧜🏿‍♀️🧜🏻‍♀️🧜🏼‍♀️ say yes","Yes!","Eww","I can't give you the green light for that","Obviously yes","Yas queen 👸🏼","Go for it. I won't tell anyone...","You're so pretty…the answer is yes","It is certain - DUH","Signs point to - YASSS","OMG, NO","Shellooo says NOOO","Sorry, no","Nahhh","Eww","OMG, NO","I can't even rn…","Let me ask my 🧜🏼‍♀️🧜🏼‍♀️🧜🏾‍♀️ and get back to you","Shellooo says YUP","Totally! Yes","🐚 we say yasss","Not gunna happen","It is a certainty","Love it - YES","Ohhh I don't know","Tough call"]
+            let shellShakeQuotes=["Sure","It’s a yes from me","Make it happen","Yassssss","You don't have to ask me for permission","Yes, go for it","Do it","Umm.. maybe think again","My 🧜🏿‍♀️🧜🏻‍♀️🧜🏼‍♀️ say yes","Yes!","Eww","I can't give you the green light for that","Obviously yes","Yas queen 👸🏼","Go for it. I won't tell anyone...","You're so pretty…the answer is yes","It is certain - DUH","Signs point to - YASSS","OMG, NO","Shellooo says NOOO","Sorry, no","Nahhh","Eww","OMG, NO","I can't even rn…","Let me ask my 🧜🏼‍♀️🧜🏼‍♀️🧜🏾‍♀️ and get back to you","Shellooo says YUP","Totally! Yes","🐚 we say yasss","Not gunna happen","It is a certainty","Love it YES","Ohhh I don't know","Tough call"]
             
             // Generate a random index
             
@@ -38,6 +40,10 @@ class ViewController: UIViewController {
             let randomShakeSaying = shellShakeQuotes[randomShakeIndex]
             magicSayingLabel.text = randomShakeSaying; labelAnimation.startCanvasAnimation()
         }
+        if shakeCount == 1 {glitterGIF.isHidden = false}
+        if shakeCount > 1 {glitterGIF.isHidden = true}
+        if shakeCount == 7 {glitterGIF.isHidden = false}
+        if shakeCount > 7 {glitterGIF.isHidden = true}
     }
     
     
@@ -66,7 +72,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         
         DispatchQueue.global(qos: .userInitiated).async {
         let shellImages = self.createImageArray(total: 295, imagePrefix: "shell")
@@ -80,6 +86,9 @@ class ViewController: UIViewController {
         
         magicSayingLabel.text = "Shake or Tap. Duh"
         mermaidImages.isHidden = true
+        glitterGIF.isHidden = true
+        glitterGIF.loadGif(name: "glitter")
+
         
         var mermaidImageNames = ["mermaid-1.png","mermaid-2.png","mermaid-3.png","mermaid-4.png"]
         var mermaidImagesVar = [UIImage]()
@@ -91,6 +100,7 @@ class ViewController: UIViewController {
         mermaidImages.startAnimating()
         
     }
+
     
  
      func createImageArray(total: Int, imagePrefix: String) -> [UIImage] {
@@ -113,7 +123,6 @@ class ViewController: UIViewController {
      imageView.animationDuration = 18
      imageView.startAnimating()
      }
-     
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
