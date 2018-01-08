@@ -11,8 +11,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Proxima Nova Alt Regular.otf">
-            <string>ProximaNovaA-Regular</string>
+        <array key="Proxima Nova Alt Condensed Bold.otf">
+            <string>ProximaNovaACond-Bold</string>
         </array>
     </customFonts>
     <scenes>
@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shellstill-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3cB-AU-c2A">
-                                <rect key="frame" x="0.0" y="-12" width="414" height="794"/>
+                                <rect key="frame" x="-52" y="-32" width="519" height="814"/>
                                 <gestureRecognizers/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbP-Pg-jys">
@@ -81,16 +81,18 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AiW-1g-bn4" userLabel="Label Animation View" customClass="CSAnimationView">
-                                        <rect key="frame" x="64.666666666666686" y="355" width="240" height="128"/>
+                                        <rect key="frame" x="64" y="355" width="240" height="128"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yass" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-f9-NA7">
-                                                <rect key="frame" x="61.999999999999986" y="53" width="117.00000000000001" height="32"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yass" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-f9-NA7">
+                                                <rect key="frame" x="62" y="52.666666666666686" width="117" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="117" id="cNu-GU-AJn" userLabel="width = 113"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNovaA-Regular" family="Proxima Nova Alt" pointSize="26"/>
-                                                <color key="textColor" red="0.068262331187725067" green="0.14359939098358154" blue="0.29413485527038574" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
+                                                <fontDescription key="fontDescription" name="ProximaNovaACond-Bold" family="Proxima Nova Alt Condensed" pointSize="26"/>
+                                                <color key="textColor" red="0.27078752012339447" green="0.33314626435870648" blue="0.48815149068832397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="highlightedColor" red="0.13463957881708141" green="0.085901046351469584" blue="0.49233222007751465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="shadowColor" red="0.93137371529778945" green="0.94485909843279903" blue="0.95350174492385786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <size key="shadowOffset" width="0.0" height="-2"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,7 +105,7 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                                <real key="value" value="2.7999999999999998"/>
+                                                <integer key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="delay">
                                                 <integer key="value" value="0"/>
@@ -161,17 +163,17 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pU5-x9-N04" secondAttribute="bottom" constant="566" id="4Ae-xh-D17"/>
-                            <constraint firstItem="3cB-AU-c2A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DbB-H5-GJ8"/>
+                            <constraint firstItem="3cB-AU-c2A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-52" id="DbB-H5-GJ8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="pU5-x9-N04" secondAttribute="top" constant="16" id="FqI-VJ-kNE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KPT-aV-re8" secondAttribute="trailing" constant="18" id="IYw-V3-XNW"/>
-                            <constraint firstAttribute="trailing" secondItem="3cB-AU-c2A" secondAttribute="trailing" id="JZL-o4-fqs"/>
+                            <constraint firstAttribute="trailing" secondItem="3cB-AU-c2A" secondAttribute="trailing" constant="-53" id="JZL-o4-fqs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pU5-x9-N04" secondAttribute="trailing" constant="9" id="Oy9-ac-fMS"/>
                             <constraint firstItem="KPT-aV-re8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Pwr-js-Ld6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="gZM-GO-tZA" secondAttribute="bottom" constant="-197" id="Sbd-pm-CV8" userLabel="Safe Area.trailing = ASK SHELLOOO 2.trailing + 19"/>
                             <constraint firstItem="3cB-AU-c2A" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="46" id="UMq-9g-O6V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cbP-Pg-jys" secondAttribute="trailing" constant="20" id="b1e-JY-XZ5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cbP-Pg-jys" secondAttribute="bottom" id="hsz-9w-L2I"/>
-                            <constraint firstItem="3cB-AU-c2A" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-12" id="i6l-Q3-gQg"/>
+                            <constraint firstItem="3cB-AU-c2A" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-32" id="i6l-Q3-gQg"/>
                             <constraint firstItem="cbP-Pg-jys" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-16" id="jhj-H6-KVq"/>
                             <constraint firstItem="cbP-Pg-jys" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pC5-jT-RVd"/>
                             <constraint firstItem="pU5-x9-N04" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="11" id="uoA-e1-Ynq"/>
@@ -186,6 +188,8 @@
                         <outlet property="mermaidAnimation" destination="pU5-x9-N04" id="m9k-a2-9bx"/>
                         <outlet property="mermaidImages" destination="QmP-oh-Eqy" id="0ev-u3-KOx"/>
                         <outlet property="shellooBackground" destination="3cB-AU-c2A" id="TiA-ji-qYb"/>
+                        <outlet property="shelloooLabel1" destination="KPT-aV-re8" id="gck-Li-Fp8"/>
+                        <outlet property="shelloooLabel2" destination="gZM-GO-tZA" id="2cF-l5-9KO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -195,7 +199,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="132" y="129.08545727136433"/>
+            <point key="canvasLocation" x="131.8840579710145" y="128.80434782608697"/>
         </scene>
     </scenes>
     <resources>

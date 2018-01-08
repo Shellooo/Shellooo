@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     var shakeCount = 0
     var shellImages: [UIImage] = []
     
+    @IBOutlet weak var shelloooLabel2: UILabel!
+    @IBOutlet weak var shelloooLabel1: UILabel!
     @IBOutlet weak var glitterGIF: UIImageView!
     @IBOutlet weak var glitterView: UIView!
     @IBOutlet weak var mermaidImages: UIImageView!
@@ -67,12 +69,30 @@ class ViewController: UIViewController {
         if buttonCount > 10 {mermaidImages.isHidden = true};
     }
     
+    func applyMotionEffect (toView view:UIView, magnitude:Float) {
+        let xMotion = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
+        xMotion.minimumRelativeValue = -magnitude
+        xMotion.maximumRelativeValue = magnitude
+        
+        let yMotion = UIInterpolatingMotionEffect(keyPath: "center.y", type: .tiltAlongVerticalAxis)
+        yMotion.minimumRelativeValue = -magnitude
+        yMotion.maximumRelativeValue = magnitude
+        
+        let group = UIMotionEffectGroup()
+        group.motionEffects = [xMotion, yMotion]
+        
+        view.addMotionEffect(group)
+    }
+    
     
     //OVERRIDE FUNC VIEW DIDLOAD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+applyMotionEffect(toView: shelloooLabel2, magnitude: 10)
+applyMotionEffect(toView: shelloooLabel1, magnitude: 10)
+applyMotionEffect(toView: magicSayingLabel, magnitude: 5)
         
         DispatchQueue.global(qos: .userInitiated).async {
         let shellImages = self.createImageArray(total: 295, imagePrefix: "shell")
