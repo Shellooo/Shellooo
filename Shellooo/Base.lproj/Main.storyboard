@@ -81,10 +81,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AiW-1g-bn4" userLabel="Label Animation View" customClass="CSAnimationView">
-                                        <rect key="frame" x="64.333333333333314" y="355" width="240" height="128"/>
+                                        <rect key="frame" x="64.666666666666686" y="355" width="240" height="128"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yass" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-f9-NA7">
-                                                <rect key="frame" x="62.000000000000014" y="52.666666666666686" width="116.99999999999999" height="34"/>
+                                                <rect key="frame" x="61.999999999999986" y="52.666666666666686" width="117.00000000000001" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="117" id="cNu-GU-AJn" userLabel="width = 113"/>
                                                 </constraints>
