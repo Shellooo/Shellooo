@@ -19,7 +19,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Shellooo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="View Controller" customClass="ViewController" customModule="Shellooo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,10 +81,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AiW-1g-bn4" userLabel="Label Animation View" customClass="CSAnimationView">
-                                        <rect key="frame" x="64.666666666666686" y="355" width="240" height="128"/>
+                                        <rect key="frame" x="64" y="355" width="240" height="128"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yass" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-f9-NA7">
-                                                <rect key="frame" x="61.999999999999986" y="52.666666666666686" width="117.00000000000001" height="34"/>
+                                                <rect key="frame" x="62" y="52.333333333333314" width="117" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="117" id="cNu-GU-AJn" userLabel="width = 113"/>
                                                 </constraints>
@@ -155,33 +155,77 @@
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="WAS-EL-tXo" appends="YES" id="ZKp-rn-sN1"/>
+                                    <outletCollection property="gestureRecognizers" destination="4BA-kf-aea" appends="YES" id="vSj-SV-FIF"/>
                                 </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUl-2D-uJz" userLabel="HeartView" customClass="CSAnimationView">
+                                <rect key="frame" x="287" y="617" width="127" height="119"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="Olv-6g-JEh">
+                                        <rect key="frame" x="-8" y="-15" width="127" height="119"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jW6-1s-8I9">
+                                        <rect key="frame" x="8" y="8" width="92" height="96"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.93703090710000003" green="0.41425931980000003" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="heartButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0iU-fD-0ib"/>
+                                            <segue destination="TSN-RT-8h4" kind="custom" identifier="segueToMe" customClass="UIStoryboardSegueFromRight" customModule="Shellooo" customModuleProvider="target" id="NbS-ud-Hku"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93703090710000003" green="0.41425931980000003" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="jW6-1s-8I9" firstAttribute="top" secondItem="TUl-2D-uJz" secondAttribute="top" constant="8" id="83Y-35-aVp"/>
+                                    <constraint firstItem="Olv-6g-JEh" firstAttribute="leading" secondItem="TUl-2D-uJz" secondAttribute="leading" constant="-8" id="8S4-1V-b44"/>
+                                    <constraint firstItem="jW6-1s-8I9" firstAttribute="leading" secondItem="TUl-2D-uJz" secondAttribute="leading" constant="8" id="Gfu-AI-Aeu"/>
+                                    <constraint firstAttribute="trailing" secondItem="jW6-1s-8I9" secondAttribute="trailing" constant="27" id="UU3-aX-yOB"/>
+                                    <constraint firstAttribute="trailing" secondItem="Olv-6g-JEh" secondAttribute="trailing" constant="8" id="c2X-xJ-YO7"/>
+                                    <constraint firstAttribute="bottom" secondItem="jW6-1s-8I9" secondAttribute="bottom" constant="15" id="eql-ex-2tc"/>
+                                    <constraint firstItem="Olv-6g-JEh" firstAttribute="top" secondItem="TUl-2D-uJz" secondAttribute="top" constant="-15" id="gp6-Xk-3NO"/>
+                                    <constraint firstAttribute="bottom" secondItem="Olv-6g-JEh" secondAttribute="bottom" constant="15" id="vwp-lf-ApJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="TUl-2D-uJz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="287" id="25K-Hw-cQc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pU5-x9-N04" secondAttribute="bottom" constant="566" id="4Ae-xh-D17"/>
                             <constraint firstItem="3cB-AU-c2A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-52" id="DbB-H5-GJ8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="pU5-x9-N04" secondAttribute="top" constant="16" id="FqI-VJ-kNE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KPT-aV-re8" secondAttribute="trailing" constant="18" id="IYw-V3-XNW"/>
+                            <constraint firstItem="TUl-2D-uJz" firstAttribute="bottom" secondItem="cbP-Pg-jys" secondAttribute="bottom" id="JWc-Hs-N52"/>
                             <constraint firstAttribute="trailing" secondItem="3cB-AU-c2A" secondAttribute="trailing" constant="-53" id="JZL-o4-fqs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pU5-x9-N04" secondAttribute="trailing" constant="9" id="Oy9-ac-fMS"/>
                             <constraint firstItem="KPT-aV-re8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Pwr-js-Ld6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="gZM-GO-tZA" secondAttribute="bottom" constant="-197" id="Sbd-pm-CV8" userLabel="Safe Area.trailing = ASK SHELLOOO 2.trailing + 19"/>
                             <constraint firstItem="3cB-AU-c2A" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="46" id="UMq-9g-O6V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cbP-Pg-jys" secondAttribute="trailing" constant="20" id="b1e-JY-XZ5"/>
+                            <constraint firstAttribute="trailing" secondItem="TUl-2D-uJz" secondAttribute="trailing" id="gpP-Ya-hEb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cbP-Pg-jys" secondAttribute="bottom" id="hsz-9w-L2I"/>
                             <constraint firstItem="3cB-AU-c2A" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-32" id="i6l-Q3-gQg"/>
                             <constraint firstItem="cbP-Pg-jys" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-16" id="jhj-H6-KVq"/>
                             <constraint firstItem="cbP-Pg-jys" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pC5-jT-RVd"/>
                             <constraint firstItem="pU5-x9-N04" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="11" id="uoA-e1-Ynq"/>
+                            <constraint firstItem="TUl-2D-uJz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="597" id="vBs-rR-7FP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="glitterGIF" destination="fiu-L3-Sci" id="QxR-vd-Ab3"/>
                         <outlet property="glitterView" destination="iZH-tr-dwr" id="jXB-uD-xHX"/>
+                        <outlet property="heartButtonView" destination="TUl-2D-uJz" id="hA3-fh-mai"/>
                         <outlet property="labelAnimation" destination="AiW-1g-bn4" id="uOi-LQ-8o7"/>
                         <outlet property="magicSayingLabel" destination="NfG-f9-NA7" id="iSJ-xq-d1w"/>
                         <outlet property="mermaidAnimation" destination="pU5-x9-N04" id="m9k-a2-9bx"/>
@@ -197,13 +241,99 @@
                         <action selector="tapTapTap:" destination="BYZ-38-t0r" id="Xkq-C3-Ope"/>
                     </connections>
                 </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="4BA-kf-aea">
+                    <connections>
+                        <action selector="swipeLeftVC:" destination="BYZ-38-t0r" id="kfS-og-to0"/>
+                        <segue destination="TSN-RT-8h4" kind="custom" identifier="heartSegue" customClass="UIStoryboardSegueFromRight" customModule="Shellooo" customModuleProvider="target" id="PR1-iI-2ts"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="128.80434782608697"/>
         </scene>
+        <!--View Controller 2-->
+        <scene sceneID="YAT-ph-WJd">
+            <objects>
+                <viewController id="TSN-RT-8h4" userLabel="View Controller 2" customClass="ViewController2" customModule="Shellooo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Job-mr-9if">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shell2GIF.gif" translatesAutoresizingMaskIntoConstraints="NO" id="dlr-Tr-g57">
+                                <rect key="frame" x="-30" y="-43" width="487" height="823"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VK1-KQ-n5i" userLabel="blueGemView">
+                                <rect key="frame" x="20" y="607" width="105" height="92"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluegem.png" translatesAutoresizingMaskIntoConstraints="NO" id="092-qp-H7N">
+                                        <rect key="frame" x="16" y="18" width="79" height="74"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXL-8t-oFW">
+                                        <rect key="frame" x="10" y="25" width="85" height="59"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.92916160572792894" green="0.18121390845776919" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="blueGemSegue:" destination="TSN-RT-8h4" eventType="touchUpInside" id="Eop-Ck-r5K"/>
+                                            <segue destination="c8E-ON-uEf" kind="unwind" identifier="segueToMe" customClass="UIStoryboardUnwindSegueFromRight" customModule="Shellooo" customModuleProvider="target" unwindAction="segueToMeWithSegue:" id="A6B-Ym-hT6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="092-qp-H7N" firstAttribute="leading" secondItem="VK1-KQ-n5i" secondAttribute="leading" constant="16" id="0Zk-nh-WoE"/>
+                                    <constraint firstItem="QXL-8t-oFW" firstAttribute="leading" secondItem="VK1-KQ-n5i" secondAttribute="leading" constant="10" id="4nG-PF-uTO"/>
+                                    <constraint firstAttribute="trailing" secondItem="QXL-8t-oFW" secondAttribute="trailing" constant="10" id="Fun-6k-bCB"/>
+                                    <constraint firstItem="092-qp-H7N" firstAttribute="top" secondItem="VK1-KQ-n5i" secondAttribute="top" constant="18" id="Q1L-hl-6zC"/>
+                                    <constraint firstItem="QXL-8t-oFW" firstAttribute="top" secondItem="VK1-KQ-n5i" secondAttribute="top" constant="25" id="YQM-Us-Jpi"/>
+                                    <constraint firstAttribute="bottom" secondItem="092-qp-H7N" secondAttribute="bottom" id="fAv-qj-9E0"/>
+                                    <constraint firstAttribute="trailing" secondItem="092-qp-H7N" secondAttribute="trailing" constant="10" id="zMy-n7-cuD"/>
+                                    <constraint firstAttribute="bottom" secondItem="QXL-8t-oFW" secondAttribute="bottom" constant="8" id="zjT-fU-U0E"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="dlr-Tr-g57" firstAttribute="top" secondItem="faf-t6-vj7" secondAttribute="top" constant="-63" id="Ani-xp-qZh"/>
+                            <constraint firstItem="VK1-KQ-n5i" firstAttribute="leading" secondItem="faf-t6-vj7" secondAttribute="leading" constant="20" id="JpP-Nw-orO"/>
+                            <constraint firstItem="faf-t6-vj7" firstAttribute="trailing" secondItem="VK1-KQ-n5i" secondAttribute="trailing" constant="289" id="M91-1P-uio"/>
+                            <constraint firstItem="faf-t6-vj7" firstAttribute="bottom" secondItem="dlr-Tr-g57" secondAttribute="bottom" constant="-44" id="S4Q-mo-DhX"/>
+                            <constraint firstItem="dlr-Tr-g57" firstAttribute="leading" secondItem="faf-t6-vj7" secondAttribute="leading" constant="-30" id="XV7-3g-kOA"/>
+                            <constraint firstItem="faf-t6-vj7" firstAttribute="bottom" secondItem="VK1-KQ-n5i" secondAttribute="bottom" constant="37" id="caw-ra-doR"/>
+                            <constraint firstItem="VK1-KQ-n5i" firstAttribute="top" secondItem="faf-t6-vj7" secondAttribute="top" constant="587" id="emf-X0-7Uw"/>
+                            <constraint firstItem="faf-t6-vj7" firstAttribute="trailing" secondItem="dlr-Tr-g57" secondAttribute="trailing" constant="-43" id="wQV-vo-JPO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="faf-t6-vj7"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="r89-2a-JX1" appends="YES" id="V6n-ls-mAZ"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="blueGem" destination="092-qp-H7N" id="Pmx-jq-cMP"/>
+                        <outlet property="shell2GIF" destination="dlr-Tr-g57" id="Sk4-Ed-SGJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ga4-2g-A9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="c8E-ON-uEf" userLabel="Exit" sceneMemberID="exit"/>
+                <swipeGestureRecognizer direction="right" id="r89-2a-JX1">
+                    <connections>
+                        <segue destination="c8E-ON-uEf" kind="unwind" identifier="blueGemSegue" customClass="UIStoryboardUnwindSegueFromRight" customModule="Shellooo" customModuleProvider="target" unwindAction="segueToMeWithSegue:" id="inG-F0-yFb"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="915.94202898550736" y="128.80434782608697"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="bluegem.png" width="305" height="260"/>
         <image name="glitter.gif" width="618" height="618"/>
+        <image name="heart.png" width="562" height="631"/>
         <image name="mermaid-1.png" width="7608" height="2199"/>
+        <image name="shell2GIF.gif" width="720" height="1200"/>
         <image name="shellstill-1.jpg" width="720" height="1200"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="NbS-ud-Hku"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -9,8 +9,8 @@
 import UIKit
 import Canvas
 
-
 class ViewController: UIViewController {
+    
     
     @IBOutlet weak var shellooBackground: UIImageView!
     @IBOutlet weak var magicSayingLabel: UILabel!
@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     var shakeCount = 0
     var shellImages: [UIImage] = []
     
+    @IBOutlet weak var heartButtonView: UIView!
     @IBOutlet weak var shelloooLabel2: UILabel!
     @IBOutlet weak var shelloooLabel1: UILabel!
     @IBOutlet weak var glitterGIF: UIImageView!
@@ -25,6 +26,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var mermaidImages: UIImageView!
     @IBOutlet weak var mermaidAnimation: UIView!
     @IBOutlet weak var labelAnimation: CSAnimationView!
+    
+    
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?)
     {
         if event?.subtype == UIEventSubtype.motionShake
@@ -63,6 +66,8 @@ class ViewController: UIViewController {
         
         let randomSaying = shellQuotes[randomIndex]
         magicSayingLabel.text = randomSaying; labelAnimation.startCanvasAnimation()
+        if buttonCount == 4 {heartButtonView.isHidden = false}; heartButtonView.startCanvasAnimation()
+        if buttonCount > 4 {heartButtonView.isHidden = true}
         if buttonCount > 4 {mermaidImages.isHidden = false}; mermaidAnimation.startCanvasAnimation()
         if buttonCount > 5 {mermaidImages.isHidden = true};
         if buttonCount > 9 {mermaidImages.isHidden = false}; mermaidAnimation.startCanvasAnimation()
@@ -85,22 +90,25 @@ class ViewController: UIViewController {
     }
     
     
+    
+    
+    
     //OVERRIDE FUNC VIEW DIDLOAD
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-applyMotionEffect(toView: shelloooLabel2, magnitude: 10)
-applyMotionEffect(toView: shelloooLabel1, magnitude: 10)
-applyMotionEffect(toView: magicSayingLabel, magnitude: 5)
+        applyMotionEffect(toView: shelloooLabel2, magnitude: 10)
+        applyMotionEffect(toView: shelloooLabel1, magnitude: 10)
+        applyMotionEffect(toView: magicSayingLabel, magnitude: 5)
         
         DispatchQueue.global(qos: .userInitiated).async {
-        let shellImages = self.createImageArray(total: 295, imagePrefix: "shell")
-        
-        DispatchQueue.main.async {
-          self.animate(imageView: self.shellooBackground, images: shellImages)
-          }
-          }
+            let shellImages = self.createImageArray(total: 295, imagePrefix: "shell")
+            
+            DispatchQueue.main.async {
+                self.animate(imageView: self.shellooBackground, images: shellImages)
+            }
+        }
         
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -108,7 +116,8 @@ applyMotionEffect(toView: magicSayingLabel, magnitude: 5)
         mermaidImages.isHidden = true
         glitterGIF.isHidden = true
         glitterGIF.loadGif(name: "glitter")
-
+        heartButtonView.isHidden = true
+        
         
         var mermaidImageNames = ["mermaid-1.png","mermaid-2.png","mermaid-3.png","mermaid-4.png"]
         var mermaidImagesVar = [UIImage]()
@@ -120,29 +129,54 @@ applyMotionEffect(toView: magicSayingLabel, magnitude: 5)
         mermaidImages.startAnimating()
         
     }
-
     
- 
-     func createImageArray(total: Int, imagePrefix: String) -> [UIImage] {
-     
-     var imageArray: [UIImage] = []
-     
-     for imageCount in 1..<total {
-     let imageName = "\(imagePrefix)-\(imageCount).jpg"
-     let image = UIImage(named: imageName)!
-     
-     imageArray.append(image)
-     }
-     return imageArray
-     }
-     
-     
-     
-     func animate(imageView: UIImageView, images: [UIImage]) {
-     imageView.animationImages = images
-     imageView.animationDuration = 18
-     imageView.startAnimating()
-     }
+    
+    @IBAction func swipeLeftVC(_ sender: Any) {
+        performSegue(withIdentifier: "segueToMe", sender: nil)
+    }
+    
+    @IBAction func heartButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "heartSegue", sender: nil)
+    }
+    
+    
+    func createImageArray(total: Int, imagePrefix: String) -> [UIImage] {
+        
+        var imageArray: [UIImage] = []
+        
+        for imageCount in 1..<total {
+            let imageName = "\(imagePrefix)-\(imageCount).jpg"
+            let image = UIImage(named: imageName)!
+            
+            imageArray.append(image)
+        }
+        return imageArray
+    }
+    
+    
+    
+    func animate(imageView: UIImageView, images: [UIImage]) {
+        imageView.animationImages = images
+        imageView.animationDuration = 18
+        imageView.startAnimating()
+    }
+    
+    @IBAction func segueToMe(segue: UIStoryboardSegue) {
+        // segue back
+    }
+    
+    override func segueForUnwinding(to toViewController: UIViewController, from fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
+        
+        if let id = identifier {
+            if id == "returnToMainViewController" {
+                let unwindSegue = UIStoryboardUnwindSegueFromRight(identifier: id, source: fromViewController, destination: toViewController)
+                return unwindSegue
+            }
+        }
+        
+        return super.segueForUnwinding(to: toViewController, from: fromViewController, identifier: identifier)!
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
