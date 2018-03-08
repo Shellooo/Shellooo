@@ -9,23 +9,32 @@ import UIKit
 
 class ViewController2: UIViewController {
     
-    @IBOutlet weak var blueGem: UIImageView!
-    @IBAction func blueGemSegue(_ sender: Any) {
-        performSegue(withIdentifier: "blueGemSegue", sender: nil)
+    @IBOutlet weak var shell2Background: UIImageView!
+    
+    @IBAction func swipeLeftAction(_ sender: Any) {
+        performSegue(withIdentifier: "segueToMe", sender: nil)
+        print("we did it")
     }
-    @IBOutlet weak var shell2GIF: UIImageView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         DispatchQueue.global(qos: .userInitiated).async {
+//self.shell2Background.loadGif(name: "shell2GIF")
             
-            self.shell2GIF.loadGif(name: "shell2GIF")
+            DispatchQueue.main.async {
+                
+            }
         }
-    }
+        
+
     
     // Do any additional setup after loading the view.
     
-    override func didReceiveMemoryWarning() {
+        func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -40,5 +49,5 @@ class ViewController2: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
-    
+}
 }

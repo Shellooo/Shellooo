@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4C913F2438096EEB5F8BBF59 /* Pods_Shellooo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F797696F9A90BA17B0B72D3D /* Pods_Shellooo.framework */; };
 		4D1A9FD42023DF3800F35EEA /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D1A9FD32023DF3800F35EEA /* heart.png */; };
+		4D35EC27204DA76900DB01BE /* shell2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D35EC26204DA76900DB01BE /* shell2-1.png */; };
+		4D35EC29204DA77100DB01BE /* shell2GIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4D35EC28204DA77100DB01BE /* shell2GIF.gif */; };
 		4D36CC241FC4A530001F5F88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D36CC231FC4A530001F5F88 /* AppDelegate.swift */; };
 		4D36CC261FC4A530001F5F88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D36CC251FC4A530001F5F88 /* ViewController.swift */; };
 		4D36CC291FC4A530001F5F88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D36CC271FC4A530001F5F88 /* Main.storyboard */; };
@@ -321,8 +323,8 @@
 		4D80765A1FC6A1AE004729EB /* mermaid-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8076561FC6A1AD004729EB /* mermaid-3.png */; };
 		4D80765E1FC74DD8004729EB /* Swift + GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D80765D1FC74DD8004729EB /* Swift + GIF.swift */; };
 		4D8076731FC75901004729EB /* ShelloooHellooo7.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8076711FC75900004729EB /* ShelloooHellooo7.png */; };
-		4DABB25C200744EC0058AB22 /* shell2GIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4DABB25B200744EB0058AB22 /* shell2GIF.gif */; };
 		4DABB25E200745910058AB22 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DABB25D200745910058AB22 /* ViewController2.swift */; };
+		4DB37617204B19E100DD3735 /* UIStoryboardUnwindSegueFromRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB37616204B19E100DD3735 /* UIStoryboardUnwindSegueFromRight.swift */; };
 		4DD5BCA01FCF32E800B12A10 /* shellstill-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4DD5BC9F1FCF32E600B12A10 /* shellstill-1.jpg */; };
 		4DF31358200686AE00316C86 /* glitter.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4DF31357200686AE00316C86 /* glitter.gif */; };
 /* End PBXBuildFile section */
@@ -347,6 +349,8 @@
 /* Begin PBXFileReference section */
 		27570F936160D8484942CBB7 /* Pods-Shellooo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shellooo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shellooo/Pods-Shellooo.release.xcconfig"; sourceTree = "<group>"; };
 		4D1A9FD32023DF3800F35EEA /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heart.png; path = "../../../Documents/Shellooo Assets/heart.png"; sourceTree = "<group>"; };
+		4D35EC26204DA76900DB01BE /* shell2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shell2-1.png"; sourceTree = "<group>"; };
+		4D35EC28204DA77100DB01BE /* shell2GIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shell2GIF.gif; sourceTree = "<group>"; };
 		4D36CC201FC4A530001F5F88 /* Shellooo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shellooo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D36CC231FC4A530001F5F88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D36CC251FC4A530001F5F88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -663,8 +667,8 @@
 		4D8076561FC6A1AD004729EB /* mermaid-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mermaid-3.png"; sourceTree = "<group>"; };
 		4D80765D1FC74DD8004729EB /* Swift + GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift + GIF.swift"; sourceTree = "<group>"; };
 		4D8076711FC75900004729EB /* ShelloooHellooo7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShelloooHellooo7.png; sourceTree = "<group>"; };
-		4DABB25B200744EB0058AB22 /* shell2GIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = shell2GIF.gif; path = "../../../Documents/Shellooo Assets/Shell Animations/shell2GIF.gif"; sourceTree = "<group>"; };
 		4DABB25D200745910058AB22 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		4DB37616204B19E100DD3735 /* UIStoryboardUnwindSegueFromRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardUnwindSegueFromRight.swift; sourceTree = "<group>"; };
 		4DD5BC9F1FCF32E600B12A10 /* shellstill-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "shellstill-1.jpg"; sourceTree = "<group>"; };
 		4DF31357200686AE00316C86 /* glitter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = glitter.gif; sourceTree = SOURCE_ROOT; };
 		8503C5AD1461CC0C6347770C /* Pods-Shellooo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shellooo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shellooo/Pods-Shellooo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -724,7 +728,8 @@
 			children = (
 				4D4696F8203175A800ED9224 /* bluegem.png */,
 				4DF31357200686AE00316C86 /* glitter.gif */,
-				4DABB25B200744EB0058AB22 /* shell2GIF.gif */,
+				4D35EC26204DA76900DB01BE /* shell2-1.png */,
+				4D35EC28204DA77100DB01BE /* shell2GIF.gif */,
 				4D1A9FD32023DF3800F35EEA /* heart.png */,
 				4D80764D1FC4E7B2004729EB /* Resources */,
 				4D36CC531FC4AB96001F5F88 /* spirites */,
@@ -733,6 +738,7 @@
 				4DABB25D200745910058AB22 /* ViewController2.swift */,
 				4D36CC271FC4A530001F5F88 /* Main.storyboard */,
 				4D4696F4202E9B3600ED9224 /* UIStoryboardSegueFromRight.swift */,
+				4DB37616204B19E100DD3735 /* UIStoryboardUnwindSegueFromRight.swift */,
 				4D36CC2A1FC4A530001F5F88 /* Assets.xcassets */,
 				4D36CC2C1FC4A530001F5F88 /* LaunchScreen.storyboard */,
 				4D36CC2F1FC4A530001F5F88 /* Info.plist */,
@@ -1246,13 +1252,13 @@
 				4D5124831FDF04D9004C2002 /* shell-231.jpg in Resources */,
 				4D5124231FDF04D9004C2002 /* shell-17.jpg in Resources */,
 				4D51244E1FDF04D9004C2002 /* shell-38.jpg in Resources */,
+				4D35EC29204DA77100DB01BE /* shell2GIF.gif in Resources */,
 				4D5124A71FDF04D9004C2002 /* shell-71.jpg in Resources */,
 				4D5124281FDF04D9004C2002 /* shell-244.jpg in Resources */,
 				4D5123E21FDF04D9004C2002 /* shell-148.jpg in Resources */,
 				4D51249C1FDF04D9004C2002 /* shell-73.jpg in Resources */,
 				4D51242F1FDF04D9004C2002 /* shell-133.jpg in Resources */,
 				4D5124261FDF04D9004C2002 /* shell-278.jpg in Resources */,
-				4DABB25C200744EC0058AB22 /* shell2GIF.gif in Resources */,
 				4D5123D41FDF04D9004C2002 /* shell-7.jpg in Resources */,
 				4D5123ED1FDF04D9004C2002 /* shell-270.jpg in Resources */,
 				4D5123921FDF04D9004C2002 /* shell-55.jpg in Resources */,
@@ -1379,6 +1385,7 @@
 				4D5124301FDF04D9004C2002 /* shell-127.jpg in Resources */,
 				4D5123DA1FDF04D9004C2002 /* shell-86.jpg in Resources */,
 				4D5123CF1FDF04D9004C2002 /* shell-161.jpg in Resources */,
+				4D35EC27204DA76900DB01BE /* shell2-1.png in Resources */,
 				4D51248A1FDF04D9004C2002 /* shell-147.jpg in Resources */,
 				4D5123F31FDF04D9004C2002 /* shell-138.jpg in Resources */,
 				4D51241A1FDF04D9004C2002 /* shell-249.jpg in Resources */,
@@ -1593,6 +1600,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB37617204B19E100DD3735 /* UIStoryboardUnwindSegueFromRight.swift in Sources */,
 				4D36CC261FC4A530001F5F88 /* ViewController.swift in Sources */,
 				4D4696F5202E9B3600ED9224 /* UIStoryboardSegueFromRight.swift in Sources */,
 				4DABB25E200745910058AB22 /* ViewController2.swift in Sources */,

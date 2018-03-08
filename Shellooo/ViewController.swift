@@ -107,6 +107,7 @@ class ViewController: UIViewController {
             
             DispatchQueue.main.async {
                 self.animate(imageView: self.shellooBackground, images: shellImages)
+    
             }
         }
         
@@ -161,14 +162,13 @@ class ViewController: UIViewController {
         imageView.startAnimating()
     }
     
-    @IBAction func segueToMe(segue: UIStoryboardSegue) {
-        // segue back
-    }
-    
-    override func segueForUnwinding(to toViewController: UIViewController, from fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
-        
+   /*
+  override func segueForUnwinding(to toViewController: UIViewController, from fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
+        print("segue back override")
         if let id = identifier {
+            print("not nil")
             if id == "returnToMainViewController" {
+                print("name matches")
                 let unwindSegue = UIStoryboardUnwindSegueFromRight(identifier: id, source: fromViewController, destination: toViewController)
                 return unwindSegue
             }
@@ -177,6 +177,7 @@ class ViewController: UIViewController {
         return super.segueForUnwinding(to: toViewController, from: fromViewController, identifier: identifier)!
     }
     
+*/
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
